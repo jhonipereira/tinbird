@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinBird by Jhoni Pereira</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+
+    <div id="app">
+        <header>
+            <div class="flex space-between">
+                <a href="/" title="Users">
+                    <img src="./assets/user.png" alt="Users" />
+                </a>
+                
+                <div id="logo">
+                <img src="./assets/bird.png" alt="TinBird" />
+                </div>
+
+                
+                <a href="/chat.html" title="Chat">
+                    <img src="./assets/chat-icon.png" alt="Chat" />
+                </a>
+            </div>
+        </header>
+        <div></div>
+        <main>
+            <div id="card"></div>
+        </main>
+        <section id="actions" class="actions flex justify-center">
+            <button id="reject-button"><img src="assets/reject.png"></button>
+            <button id="accept-button"><img src="assets/like-icon.png"></button>
+        </section>
+        <section id="animations">
+            <img src="assets/nope-image.png" id="reject-anim" alt="Nope" />
+            <img src="assets/accept.png" id="accept-anim" alt="Like" />
+        </section>
+    </div>
+    
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>

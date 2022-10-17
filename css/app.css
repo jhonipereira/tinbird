@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 33.29%, #F7F8FC 100%);
+    height: 100vh; 
+}
+
+*{
+    box-sizing: content-box;
+}
+
+#app{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 375px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* HEADER */
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+header img{
+    display: block;
+    height: 27.666666px;
+    width: auto;
+}
+
+#logo{
+    background: linear-gradient(270deg, #FA695A 0%, #F83375 100%);
+    border-radius: 30px;
+    padding: 0 16px;
+}
+
+header{
+    margin: 12px 5px;
+}
+
+/* MAIN */
+#card {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 6px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+#card .img {
+    object-fit: fill;
+    object-position: top center;
+
+}
+
+.info {
+    position: absolute;
+color: white;
+bottom: 0;
+left: 0;
+z-index: 2;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) -11.44%, rgba(0, 0, 0, 0) 39.97%);
+width: 100%;
+padding: 200px 15px 15px;
+}
+
+.feature-suggestion{
+    cursor: pointer;
+    /* position: relative; */
+}
+
+.feature-suggestion .status{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+    transition: all linear .2s;
+}
+.feature-suggestion .status.active{
+    opacity: 1;
+}
+
+/* ACTIONS */
+
+.actions{
+    margin: 15px;
+}
+
+.actions button{
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 0 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    transition: all linear .2s;
+}
+
+#accept-button:hover{
+    background-color: #DBFFF4;
+}#reject-button:hover{
+    background-color: #FFE7EF;
+}
+
+.actions button > img{
+    height: 26px;
+}
+
+#animations{
+    position: absolute;
+    top: 160px;
+    right: 20px;
+}
+
+#animations img{
+    opacity: 0;
+    height: 0;
+}
+
+#animations img.animate{
+  height: auto;
+  -webkit-animation-name: stamp;
+  animation-name: stamp;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode:forwards;
+   animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes stamp{
+    0%{
+      opacity: 0;
+    }
+    10%{
+      opacity:.50;
+      transform-origin: 50% 50%;
+      transform: rotate(-2deg) scale(5);
+      transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+    100%{
+      opacity:1;
+      transform: rotate(-15deg) scale(1);
+    }
+  }
+  
